@@ -1,3 +1,220 @@
+:root {
+  --header-link: #212121;
+  --header-logo: #2196f3;
+  --header-contact: #757575;
+  --hero-color-footer: #2f303a;
+  --background-color: #f5f4fa;
+  --text-white: #ffffff;
+}
+
 body {
-  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ---------------HEADER------------- */
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.header-link {
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--header-link);
+}
+
+.header-contact {
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--header-contact);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--header-logo);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--header-logo);
+}
+
+/* -----------------HERO------------------- */
+
+.hero {
+  background-color: var(--hero-color-footer);
+}
+
+.hero-title {
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+.hero-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--text-white);
+}
+
+.hero-btn:focus,
+.hero-btn:hover {
+  color: var(--header-logo);
+}
+.hero-subtitle {
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-link);
+}
+.hero-lead {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-contact);
+}
+/* ---------Чем мы занимаемся---------- */
+.about-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-link);
+}
+
+/* -------------------Наша команда----------------- */
+.team {
+  background-color: var(--background-color);
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-link);
+}
+
+.team-subtitle {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--header-link);
+}
+.team-lead {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--header-contact);
+}
+/* ------------Контактная информация------------ */
+.footer {
+  background-color: var(--hero-color-footer);
+}
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-logo);
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-white);
+}
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:focus,
+.footer-contact:hover {
+  color: var(--header-logo);
+}
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--header-logo);
+}
+
+/* --------------PORTFOLIO--------------- */
+
+/* BUTTON */
+.portfolio-btn {
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--header-link);
+}
+.portfolio-btn:focus,
+.portfolio-btn:hover {
+  color: var(--header-logo);
+}
+/* HERO */
+.portfolio-subtitle {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--header-link);
+}
+.hero-portfolio-lead {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--header-contact);
+}
+/* Контактная информация */
+.footer-portfolio {
+  background-color: var(--hero-color-footer);
+}
+.footer-portfolio-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--header-logo);
+}
+.footer-portfolio-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-white);
+}
+.footer-portfolio-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-portfolio-contact:focus,
+.footer-portfolio-contact:hover {
+  color: var(--header-logo);
+}
+.footer-portfolio-link:focus,
+.footer-portfolio-link:hover {
+  color: var(--header-logo);
 }
