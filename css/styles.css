@@ -104,7 +104,7 @@ body {
 
 .hero-btn:focus,
 .hero-btn:hover {
-  color: var(--header-logo);
+  color: var(--text-white);
   cursor: pointer;
 }
 
