@@ -19,6 +19,10 @@ body {
 .h-none {
   display: none;
 }
+.footer,
+.footer-portfolio {
+  font-family: 'Raleway', sans-serif;
+}
 
 /* ---------------HEADER------------- */
 
@@ -48,7 +52,6 @@ body {
 }
 
 .header-contact {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -65,7 +68,7 @@ body {
 .header-link:focus {
   color: var(--header-logo);
 }
-.header-link-visited:visited {
+.header-link-visited:first-child {
   color: var(--header-logo);
 }
 
@@ -76,7 +79,6 @@ body {
 }
 
 .hero-title {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -87,7 +89,6 @@ body {
   color: var(--text-white);
 }
 .hero-btn {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -102,14 +103,17 @@ body {
   border-radius: 4px;
 }
 
-.hero-btn:focus,
-.hero-btn:hover {
+.hero-btn:focus {
   color: var(--text-white);
+  cursor: pointer;
+}
+.hero-btn:hover {
+  color: white;
+  background: #188ce8;
   cursor: pointer;
 }
 
 .hero-subtitle {
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -117,7 +121,6 @@ body {
   color: var(--header-link);
 }
 .hero-lead {
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -126,7 +129,6 @@ body {
 
 /* ---------Чем мы занимаемся---------- */
 .about-title {
-  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -139,7 +141,6 @@ body {
   background-color: var(--background-color);
 }
 .team-title {
-  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -148,15 +149,15 @@ body {
 }
 
 .team-subtitle {
-  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--header-link);
+  color: #212121;
 }
 .team-lead {
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -168,7 +169,6 @@ body {
   background-color: var(--hero-color-footer);
 }
 .footer-logo {
-  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -199,31 +199,38 @@ body {
 
 /* BUTTON */
 .portfolio-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-link);
+  background: #f5f4fa;
 }
 .portfolio-btn:focus,
 .portfolio-btn:hover {
   color: var(--header-logo);
   cursor: pointer;
 }
+.header-link-visited:first-child {
+  color: var(--header-logo);
+}
 
-.portfolio-btn:hover {
+.portfolio-btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-white);
-  background: var(--header-logo);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  color: #212121;
 }
+.portfolio-btn:hover {
+  background: #2196f3;
+  color: var(--text-white);
+}
+
 .portfolio-btn-visited {
   font-size: 16px;
   line-height: 1.62;
@@ -235,10 +242,12 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+.portfolio-btn-visited:focus {
+  color: #ffffff;
+}
 
 /* HERO */
 .portfolio-subtitle {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -247,7 +256,6 @@ body {
   color: var(--header-link);
 }
 .hero-portfolio-lead {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
